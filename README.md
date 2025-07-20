@@ -15,9 +15,9 @@ Instead, it documents **sanitized, domain-specific technical challenges and solu
 
 ## 📚 Table of Contents
 
-| #  | Challenge Title | Area | Link |
+| #  | Challenge Title | Area | Status |
 |----|-----------------|------|------|
-| 1 | [Tunnel Up but No Traffic: strongSwan, PF_KEY & ICV Mismatch](./01-strongswan-pfkey-icv-issue) | IPsec / Linux Kernel | [🔗](./01-strongswan-pfkey-icv-issue) |
+| 1 | [Tunnel Up but No Traffic: strongSwan, PF_KEY & ICV Mismatch]([./1_IPsec_Tunnel_up_but_No_traffic)) | IPsec / Linux Kernel | Fixed |
 
 
 *(This will grow over time — one real problem at a time.)*
