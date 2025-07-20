@@ -14,7 +14,9 @@ And then — chaos.
 * Client-side applications started failing silently.
 * Our cloud-side EMS reported clients as disconnected.
 * No traffic appeared at the server, yet tunnels showed as UP.
-* Keepalive packets flowed, and outbound packet counters on the client kept increasing.
+* IPsec Keepalive packets flowed.
+* Outbound packet counters on the client kept increasing.
+* But Inbount packet counter on server for that tunnel was 0.
 
 It was a classic case of “the tunnel is up, but nothing works.”
 
