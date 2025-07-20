@@ -61,18 +61,17 @@ Our remote peer was using 128-bit ICVs (per [RFC 4868 §2.3](https://www.rfc-edi
 
 Result: packets failed integrity checks and were dropped — without any warning in the logs
 
-📌 RFC 4868 recommends ICV length = L/2, where L is the hash output length (256 bits → 128 bits).
+### 📌 RFC 4868 recommends ICV length = L/2, where L is the hash output length (256 bits → 128 bits).
 
 So… why didn’t the kernel match this?
 
-🧩 The Plugin That Made All the Difference
+## 🧩 The Plugin That Made All the Difference
 Our focus shifted from the kernel to how strongSwan communicates with the kernel.
 
 We explored two kernel interface plugins:
 
-kernel-pfkey
-
-kernel-netlink
+- kernel-pfkey
+- kernel-netlink
 
 On inspecting strongSwan’s PF_KEY plugin, we noticed it does not set the ICV truncation length explicitly.
 So the kernel defaults to 96 bits.
