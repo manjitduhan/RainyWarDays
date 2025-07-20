@@ -12,8 +12,8 @@ As security owners, we knew this wasn’t optional. We prioritized the change, u
 And then — chaos.
 
 * Client-side applications started failing silently.
-* Our cloud-side EMS reported clients as disconnected.
-* No traffic appeared at the server, yet tunnels showed as UP.
+* Server reported client as disconnected.
+* No traffic appeared at the server for that client, yet tunnels showed as UP.
 * IPsec Keepalive packets flowed.
 * Outbound packet counters on the client kept increasing.
 * But Inbount packet counter on server for that tunnel was 0.
