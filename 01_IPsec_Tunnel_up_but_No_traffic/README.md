@@ -80,25 +80,25 @@ In contrast, the kernel-netlink plugin does the right thing:
 
 📂 [strongSwan - kernel_netlink_ipsec.c](https://github.com/strongswan/strongswan/blob/master/src/libcharon/plugins/kernel_netlink/kernel_netlink_ipsec.c#L2008C1-L2026C4)
 ```
-		if (trunc_len)
-		{
-			struct xfrm_algo_auth* algo;
+if (trunc_len)
+{
+	struct xfrm_algo_auth* algo;
 
-			/* the kernel uses SHA256 with 96 bit truncation by default,
-			 * use specified truncation size supported by newer kernels.
-			 * also use this for untruncated MD5, SHA1 and SHA2. */
-			algo = netlink_reserve(hdr, sizeof(request), XFRMA_ALG_AUTH_TRUNC,
-								   sizeof(*algo) + data->int_key.len);
-			if (!algo)
-			{
-				goto failed;
-			}
-			algo->alg_key_len = data->int_key.len * 8;
-			algo->alg_trunc_len = trunc_len;
-			strncpy(algo->alg_name, alg_name, sizeof(algo->alg_name)-1);
-			algo->alg_name[sizeof(algo->alg_name)-1] = '\0';
-			memcpy(algo->alg_key, data->int_key.ptr, data->int_key.len);
-		}
+	/* the kernel uses SHA256 with 96 bit truncation by default,
+	 * use specified truncation size supported by newer kernels.
+	 * also use this for untruncated MD5, SHA1 and SHA2. */
+	algo = netlink_reserve(hdr, sizeof(request), XFRMA_ALG_AUTH_TRUNC,
+						   sizeof(*algo) + data->int_key.len);
+	if (!algo)
+	{
+		goto failed;
+	}
+	algo->alg_key_len = data->int_key.len * 8;
+	algo->alg_trunc_len = trunc_len;
+	strncpy(algo->alg_name, alg_name, sizeof(algo->alg_name)-1);
+	algo->alg_name[sizeof(algo->alg_name)-1] = '\0';
+	memcpy(algo->alg_key, data->int_key.ptr, data->int_key.len);
+}
 ```
 
 Here, the plugin explicitly sets the truncation length — 128 bits in our case — aligning perfectly with the peer.
