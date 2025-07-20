@@ -57,26 +57,16 @@ Every entry contains:
 
 ---
 
-## 💼 For Hiring Managers
-
-If you’ve landed here via my CV or LinkedIn:
-
-I may not have open source contributions (yet), but these pages reflect the **level of systems thinking, root cause analysis, and production responsibility** I bring every day.
-
-If you want someone who can fix things others can't see — we should talk.
-
----
-
 ## 🔗 Related
 
 - [LinkedIn](https://linkedin.com/in/manjitduhan)
-
+- [Manjit Singh Duhan](https://manjitduhan.github.io/)
 
 ---
 
 ## 📜 License
 
-This repository contains personal worklogs and knowledge. Code snippets are shared under MIT license. Feel free to reference or adapt, but please credit back.
-Feel free to contact via LinkedIn, if case you have any questions.
-
+This repository contains personal worklogs and knowledge. 
+Code snippets are shared are from opensource repos and is property of their respective owner.
+Code snippets are referenced with proper link and is just for educational purpose.(If you still have any concern, kindly contact via linkedIn, I will remove the same).
 ---
