@@ -1,4 +1,4 @@
-# 🧠 The Tunnel That Came Up — But Didn’t Work  
+# 🧠 An IPsec Tunnel That Came Up — But No Traffic Was Flowing
 _A Debugging Story Across strongSwan, PF_KEY, and the Kernel_
 
 ---
