@@ -19,6 +19,10 @@ Instead, it documents **sanitized, domain-specific technical challenges and solu
 |----|-----------------|------|------|
 | 1 | [Tunnel Up but No Traffic: strongSwan, PF_KEY & ICV Mismatch]([1_IPsec_Tunnel_up_but_No_traffic/README.md)) | IPsec / Linux Kernel | Fixed |
 
+| # | Title | Summary | Link | Area |
+|--:|-------|---------|------|------|
+| 1 | 🧠 The Tunnel That Came Up — But Didn’t Work | A real-world debugging journey where an IPsec tunnel came up successfully — but no traffic flowed. A deep dive into strongSwan plugins, Linux kernel ICV mismatch, PF_KEY vs NETLINK, and RFC 4868 alignment. | [Read Story ›](01_ipsec-tunnel-up-no-traffic/README.md) |  IPsec / Linux Kernel |
+
 
 *(This will grow over time — one real problem at a time.)*
 
