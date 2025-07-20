@@ -66,7 +66,9 @@ Every entry contains:
 
 ## 📜 License
 
-This repository contains personal worklogs and knowledge. 
-Code snippets are shared are from opensource repos and is property of their respective owner.
-Code snippets are referenced with proper link and is just for educational purpose.(If you still have any concern, kindly contact via linkedIn, I will remove the same).
+- This repository contains personal worklogs and knowledge.
+- Anyone is free to use it but have no gurantee of any kind. So, please refer it on your own risk.
+- Code snippets that are shared here, are from opensource repos and is property of their respective owner/s.
+- Code snippets are referenced with proper link to orignal work and is here just for educational purpose.(If you still have any concern, kindly contact me via linkedIn, I will remove the same).
+
 ---
