@@ -4,7 +4,7 @@ _A Debugging Story Across strongSwan, PF_KEY, and the Kernel_
 ---
 
 ## 🪧 Introduction
-In production, everything looked green. All peers were connected, IPsec tunnels were established, and monitoring tools reported no errors.
+From Above, everything looked green. All IPsec peers were connected, IPsec tunnels were established, and monitoring tools reported no errors.
 Then came a compliance flag: “Some devices are still using SHA1 — migrate to SHA256 immediately.”
 
 As security owners, we knew this wasn’t optional. We prioritized the change, updated the configuration on both initiator and responder to use HMAC-SHA256, and rolled it out.
